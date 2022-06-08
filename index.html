@@ -10,40 +10,142 @@
     <title>Pet Adoption</title>
 </head>
 <body>
-<header>
-    <nav class="nav">
-        <div class="nav--col">
-            <div class="logo-container">
-                <img src="./assets/images/logo.jpg" alt="logo" class="logo-container__logo">
+<div class="container">
+    <header>
+        <nav class="nav">
+            <div class="nav--col">
+                <div class="logo-container">
+                    <img src="./assets/images/logo.jpg" alt="logo" class="logo-container__logo">
+                </div>
+                <ul class="nav-link">
+                    <li class="nav-link__item">
+                        <a href="#" class="nav-link__text active">Find a Pet</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a href="#" class="nav-link__text">Shop</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a href="#" class="nav-link__text">About Pet Adoption</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-link">
-                <li class="nav-link__item">
-                    <a href="#" class="nav-link__text">Find a Pet</a>
-                </li>
-                <li class="nav-link__item">
-                    <a href="#" class="nav-link__text">Shop</a>
-                </li>
-                <li class="nav-link__item">
-                    <a href="#" class="nav-link__text">About Pet Adoption</a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav--col">
-            <ul class="nav-link">
-                <li class="nav-link__item">
-                    <a href="#" class="nav-link__text">Sign up</a>
-                </li>
-                <li class="nav-link__item">|</li>
-                <li class="nav-link__item">
-                    <a href="#" class="nav-link__text">Log in</a>
-                </li>
-            </ul>
-            <div class="logo-container">
-                <i class="fa fa-search"></i>
-                <i class="fa fa-bars"></i>
+            <div class="nav--col">
+                <ul class="nav-link">
+                    <li class="nav-link__item">
+                        <a href="#" class="nav-link__text">Sign up</a>
+                    </li>
+                    <li class="nav-link__item">|</li>
+                    <li class="nav-link__item">
+                        <a href="#" class="nav-link__text">Log in</a>
+                    </li>
+                </ul>
+                <div class="logo-container">
+                    <i class="menu-icon fa fa-search"></i>
+                    <i class="menu-icon fa fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--    TOP HERO SECTION-->
+    <section>
+        <div class="hero-section">
+            <div class="hero-container">
+                <img src="./assets/images/pet-cover.jpg" alt="pet cover" class="hero-container__img">
+                <div class="hero-container-text-block">
+                    <h2 class="hero-container__title">Find the Right <br> Cat for You</h2>
+                    <p class="hero-container__subtitle">Take out interactive quiz to find the right cat to adopt</p>
+                </div>
             </div>
         </div>
-    </nav>
-</header>
+        <div class="pet-finder">
+            <div class="pet-finder-search-section">
+                <i class="fa fa-search pet-finder-search-section__icon"></i>
+                <input type="text" class="pet-finder-search-section__input" placeholder="Search your pet">
+            </div>
+            <div class="pet-finder-btn-area">
+                <a href="#" class="pet-finder-btn-area-col pet-finder-btn-area-col--border-right">
+                    <i class="fa fa-cat pet-finder-btn-area-col__icon"></i>
+                    <p class="pet-finder-btn-area-col__title">Find a Cat</p>
+                </a>
+                <a href="#" class="pet-finder-btn-area-col pet-finder-btn-area-col--border-right">
+                    <i class="fa fa-dog pet-finder-btn-area-col__icon"></i>
+                    <p class="pet-finder-btn-area-col__title">Find a Dog</p>
+                </a>
+                <a href="#" class="pet-finder-btn-area-col">
+                    <p class="pet-finder-btn-area-col__title">Find other pets</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--    TOP HERO SECTION END-->
+
+<!--    PET LIST AREA-->
+    <section>
+        <div class="pet-list-area">
+            <div class="pet-list-area-text-row">
+                <div class="pet-list-area-text-col">
+                    <p class="pet-list-area__subtitle">Find your pets</p>
+                    <h3 class="pet-list-area__title">2k+ Pets Available For<br> Adoption Near You</h3>
+                </div>
+                <div class="pet-list-area-text-col">
+                    <a href="#" class="pet-list-area__btn">See more &#8594;</a>
+                </div>
+            </div>
+            <div class="pet-list">
+                <div class="pet-card">
+                    <div class="pet-card-img-container">
+                        <img src="./assets/images/pet-1.jpg" alt="pet image" class="pet-card__img">
+                    </div>
+                    <div class="pet-card-info">
+                        <p class="pet-card-info__name">Nishu</p>
+                    </div>
+                </div>
+                <div class="pet-card">
+                    <div class="pet-card-img-container">
+                        <img src="./assets/images/pet-2.jpg" alt="pet image" class="pet-card__img">
+                    </div>
+                    <div class="pet-card-info">
+                        <p class="pet-card-info__name">Munta</p>
+                    </div>
+                </div>
+                <div class="pet-card">
+                    <div class="pet-card-img-container">
+                        <img src="./assets/images/pet-3.jpg" alt="pet image" class="pet-card__img">
+                    </div>
+                    <div class="pet-card-info">
+                        <p class="pet-card-info__name">Tanbu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    PET LIST AREA END-->
+<!--    ADOPTION REVIEW-->
+    <section>
+        <div class="adoption-review">
+            <div class="adoption-review-col">
+                <div class="star-container">
+                    <i class="fa fa-star star-container__icon"></i>
+                    <i class="fa fa-star star-container__icon"></i>
+                    <i class="fa fa-star star-container__icon"></i>
+                    <i class="fa fa-star star-container__icon"></i>
+                    <i class="fa fa-star star-container__icon"></i>
+                </div>
+                <p class="adoption-review__para">
+                    "There were funny parts (Most of which were in trailers),
+                    but there were dark parts, too. If I had smaller kids younger than 10 or so,
+                    I wouldn't be seeing this movie"
+                </p>
+                <h4 class="adoption-review__name">Gavin Raynolds</h4>
+                <p class="adoption-review__designation">Founder & CEO of Stripe</p>
+            </div>
+            <div class="adoption-review-col">
+                <div class="adoption-review-img-container">
+                    <img src="" alt="" class="adoption-review-img-container__img">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 </body>
 </html>
